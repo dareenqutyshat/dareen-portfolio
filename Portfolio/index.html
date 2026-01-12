@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dareen Qutishat</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root { --bg-main: #f5f2ed; --bg-accent: #ece8e1; --text-dark: #2d2a26; --text-muted: #6b665f; --border-color: #dcd7cf; --accent-gold: #a68a56; }
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: 'Inter', sans-serif; background-color: var(--bg-main); color: var(--text-dark); line-height: 1.7; }
+        h1, h2, h3, .quote { font-family: 'Playfair Display', serif; font-weight: 700; }
+        
+        nav { position: fixed; width: 100%; padding: 30px 6%; display: flex; justify-content: space-between; align-items: center; background: rgba(245, 242, 237, 0.95); backdrop-filter: blur(8px); z-index: 1000; border-bottom: 1px solid var(--border-color); }
+        nav .logo { font-size: 1.2rem; letter-spacing: 1px; color: var(--text-dark); text-transform: uppercase; }
+        nav .links a { text-decoration: none; color: var(--text-muted); margin-left: 35px; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        nav .links a:hover { color: var(--accent-gold); }
+
+        section { padding: 160px 10% 100px; max-width: 1400px; margin: 0 auto; }
+        .hero { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 80px; align-items: center; }
+        
+        .profile-photo {
+    width: 220px; 
+    height: 280px; 
+    border-radius: 5px; 
+    object-fit: cover;
+    border: 1px solid var(--border-color);
+    padding: 10px; 
+    background-color: white; 
+    box-shadow: 0 15px 35px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+
+        .hero h1 { font-size: 5rem; line-height: 1; margin: 0 0 30px; letter-spacing: -2px; }
+        .metadata-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; padding: 50px; background: var(--bg-accent); border-radius: 4px; border: 2px solid var(--border-color); }
+        .meta-box h4 { font-size: 0.7rem; text-transform: uppercase; color: var(--accent-gold); margin: 0 0 5px; letter-spacing: 1.5px; }
+        .meta-box p { font-size: 1rem; margin: 0; font-weight: 500; color: var(--text-dark); }
+        .quote-box { font-size: 1.4rem; margin: 40px 0; color: var(--text-muted); font-style: italic; max-width: 600px; }
+        .btn-cv { display: inline-block; padding: 15px 35px; background: var(--text-dark); color: #fff; text-decoration: none; font-size: 0.9rem; letter-spacing: 1px; transition: 0.3s; }
+        
+        footer { padding: 60px 10%; text-align: center; background: var(--bg-accent); border-top: 1px solid var(--border-color); font-size: 0.8rem; color: var(--text-muted); }
+        
+        @media (max-width: 900px) { 
+            .hero { grid-template-columns: 1fr; text-align: center; } 
+            .hero h1 { font-size: 3.5rem; } 
+            .profile-photo { margin: 0 auto 25px; }
+            .quote-box { margin: 40px auto; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Portfolio</div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="assignments.html">Assignments</a>
+            <a href="activities.html">Activities</a>
+            <a href="reflections.html">Reflections</a>
+            <a href="webs.html">Webs</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+    <section>
+        <div class="hero">
+            <div>
+                <img src="IMG_2122.png" alt="Dareen Qutishat" class="profile-photo">
+                
+                <br>
+                <span style="font-size: 0.8rem; color: var(--accent-gold); text-transform: uppercase; letter-spacing: 3px;">Academic Identity</span>
+                <h1>Dareen Qutishat</h1>
+                <p class="quote-box">"Logic will get you from A to B. Imagination will get you everywhere." - Albert Einstein </p>
+                <a href="resume_dareen.pdf" class="btn-cv">ACCESS CURRICULUM VITAE</a>
+            </div>
+            <div class="metadata-grid">
+                <div class="meta-box"><h4>Student ID</h4><p>0221733</p></div>
+                <div class="meta-box"><h4>Major</h4><p>Business Information Technology</p></div>
+                <div class="meta-box"><h4>University</h4><p>University of Jordan</p></div>
+                <div class="meta-box"><h4>College</h4><p>KASIT</p></div>
+                <div class="meta-box"><h4>Course</h4><p>IT Project Management</p></div>
+                <div class="meta-box"><h4>Instructor</h4><p>Dr. Ahmad Kheraisat</p></div>
+                <div class="meta-box"><h4>Term</h4><p>Fall 2025-2026</p></div>
+            </div>
+        </div>
+    </section>
+    <footer>&copy; 2026 Dareen Qutishat</footer>
+</body>
+</html>
